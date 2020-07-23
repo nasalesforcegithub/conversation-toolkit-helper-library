@@ -7,3 +7,5 @@ The app consists of:
 - Lightning component (to be added to Voice Call, Chat Transcript, or Messaging Session page layouts
 - Custom object: Conversation Helper. Creating this object allows you to match a keyword or keyphrase to a Recommendation
 - Pre-built Next Best Action strategy.
+
+License: https://github.com/nasalesforcegithub/conversation-toolkit-helper/blob/master/LICENSE
