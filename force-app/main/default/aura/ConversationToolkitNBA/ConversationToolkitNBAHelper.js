@@ -25,16 +25,16 @@
             this.checkHelperList(cmp, transcriptText, speaker);
         }
     },
-        // Chat/Messaging Transcripts (Customer and Agent)
-        chatConversationEventListener: function(cmp, evt, speaker) {
-            var transcriptText = evt.getParam('content');
-            var recordId = cmp.get("v.recordId");
-            var chatRecordId = evt.getParam("recordId");       
-            //Confirm that the Event came from the Chat that the component is on
-            if (recordId.includes(chatRecordId)){
-                helper.checkHelperList(cmp, helper, transcriptText, 'Agent');        
-            }
-        },
+    // Chat/Messaging Transcripts (Customer and Agent)
+    chatConversationEventListener: function(cmp, evt, speaker) {
+        var transcriptText = evt.getParam('content');
+        var recordId = cmp.get("v.recordId");
+        var chatRecordId = evt.getParam("recordId");       
+        //Confirm that the Event came from the Chat that the component is on
+        if (recordId.includes(chatRecordId)){
+            this.checkHelperList(cmp, transcriptText, speaker);        
+        }
+    },
     
     loadHelperData: function(cmp, helper) {
         var action = cmp.get("c.getConversationHelperList");
