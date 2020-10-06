@@ -14,11 +14,11 @@
     
     // Chat Transcript Customer
     onChatTranscriptCustomer: function(cmp, evt, helper){
-        helper.chatConversationEventListener(cmp, helper, 'EndUser');        
+        helper.chatConversationEventListener(cmp, evt, 'EndUser');        
     },
     
     // Chat Transcript Agent
     onChatTranscriptAgent: function(cmp, evt, helper){
-        helper.chatConversationEventListener(cmp.helper,'Agent');
+        helper.chatConversationEventListener(cmp, evt,'Agent');
     }
 })
