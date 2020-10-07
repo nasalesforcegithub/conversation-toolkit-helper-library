@@ -21,4 +21,5 @@
     onChatTranscriptAgent: function(cmp, evt, helper){
         helper.chatConversationEventListener(cmp, evt,'Agent');
     }
+    
 })
