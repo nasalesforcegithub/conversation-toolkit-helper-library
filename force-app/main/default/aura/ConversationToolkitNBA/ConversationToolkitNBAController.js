@@ -8,10 +8,6 @@
         helper.unsubscribeFromVoiceToolkit(cmp);
     },
     
-    onInvokeNBA: function(cmp, event, helper) {
-        helper.updateNextBestActions(cmp);
-    },
-    
     // Chat Transcript Customer
     onChatTranscriptCustomer: function(cmp, evt, helper){
         helper.chatConversationEventListener(cmp, evt, 'EndUser');        
