@@ -8,8 +8,6 @@
         cmp.find('voiceToolkitApi').removeConversationEventListener('TRANSCRIPT', cmp._conversationEventListener);
     },
     
-    
-    
     invokeNBA: function(cmp, transcriptText) {
         var transcriptVariable = {ConversationKey: transcriptText};
         cmp.find('voiceToolkitApi').updateNextBestActions(cmp.get('v.recordId'), transcriptVariable);
