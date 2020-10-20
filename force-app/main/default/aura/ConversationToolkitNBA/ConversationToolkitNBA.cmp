@@ -2,17 +2,17 @@
     <!-- init -->
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     
+    <!-- destroy -->
+    <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}"/>
+    
     <!-- voice message subscribers -->
-    <lightning:messageChannel type="lightning__serviceVoiceConversationEvents" onMessage="{!c.onVoiceTranscript}"/>
+    <force:serviceCloudVoiceToolkitApi aura:id="voiceToolkitApi"/>
     
     <!-- chat message subscribers -->
     <lightning:conversationToolkitAPI aura:id="conversationKit" />
     <aura:handler event="lightning:conversationNewMessage" action="{!c.onChatTranscriptCustomer}" />
     <aura:handler event="lightning:conversationAgentSend" action="{!c.onChatTranscriptAgent}" />
-    
-    <!-- message publishers -->
-    <lightning:messageChannel type="lightning__voiceNBARefreshComponent" aura:id="nbaRefresh"/>
-    
+        
     <!-- attributes -->
     <aura:attribute name="message" type="String" default="No events received yet."/>
     <aura:attribute name="transcript" type="String" default="No transcripts received yet."/>
