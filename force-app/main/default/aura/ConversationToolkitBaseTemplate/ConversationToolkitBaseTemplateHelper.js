@@ -8,11 +8,6 @@
         cmp.find('voiceToolkitApi').removeConversationEventListener('TRANSCRIPT', cmp._conversationEventListener);
     },
     
-    invokeNBA: function(cmp, transcriptText) {
-        var transcriptVariable = {ConversationKey: transcriptText};
-        cmp.find('voiceToolkitApi').updateNextBestActions(cmp.get('v.recordId'), transcriptVariable);
-    },
-    
     // Voice Transcripts (Customer and Agent)
     voiceConversationEventListener: function(cmp, transcript) {
         var transcriptText = transcript.detail.content.text;
@@ -34,6 +29,13 @@
         }
     },
     
+    // Example function for invoking Next Best Action
+    invokeNBA: function(cmp, transcriptText) {
+        var transcriptVariable = {ConversationKey: transcriptText};
+        cmp.find('voiceToolkitApi').updateNextBestActions(cmp.get('v.recordId'), transcriptVariable);
+    },
+
+    // Example placeholder function invoked when a Voice or Chat/Message event is received
     runCustomFuntion: function(cmp, transcriptText, speaker){
         ////////////////////////////
         //INSERT CUSTOMER LOGIC HERE
