@@ -1,0 +1,8 @@
+<design:component>
+    <design:attribute name="toggleQuestion" label="Label" description="What is the label for your toggle?"/>
+    <design:attribute name="activeKeyword" label="Active Keyword" description="What is the keyword that you are listening for to toggle on?"/>
+	<design:attribute name="inactiveKeyword" label="Inactive Keyword" description="What is the keyword that you are listening for to toggle off?"/>    
+    <design:attribute name="activeLabel" label="Active Label" description="What is the label to show when the toggle is selected?"/>
+    <design:attribute name="inactiveLabel" label="Inactive Label" description="What is the label to show when the toggle is selected?"/>
+    <design:attribute name="toggleValue" label="Toggle Value" description="Boolean value for the toggle input/result"/>
+</design:component>
