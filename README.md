@@ -2,6 +2,8 @@
 
 This project provides a library of custom components to allow automation of agent experiences off of Voice Calls, as well as Chat and Messaging Conversations in Salesforce
 
+<a href="https://githubsfdeploy.herokuapp.com?owner=nasalesforcegithub&repo=conversation-toolkit-helper-library"><img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png"></a>
+
 ## Component List
 - ConversationToolkitBaseComponent
 This is a template component which listens to events from Voice call, Chat, and Messaging sessions, to fire a dummy method. You can use this as a template for building new components by adding in your own method to run when the customer says something.
